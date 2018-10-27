@@ -3,9 +3,9 @@
 
 
 ### Trivia:
-> Regular Integer Maximum Value :  2,147,483,647 <br/>
-> Explain Spacial Types and uses.
-> What are metadata.
+- Regular Integer Maximum Value :  2,147,483,647 
+- Explain Spacial Types and uses.
+- What are metadata.
 
 ### Database Gurus
 http://www.dbdebunk.com/
