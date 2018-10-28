@@ -14,5 +14,13 @@
 - Physical
 - Storage
 
+
+### Speciﬁcations need to be acquired for the following
+- Entities and relationships
+- Attributes and domains
+- Business rules that can be enforced in the database
+- Processes that require the use of the database
+
+
 ### Database Gurus
 http://www.dbdebunk.com/
