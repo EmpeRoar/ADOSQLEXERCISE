@@ -8,5 +8,11 @@
 - What are **_Metadata_**.
 - **_Keys_** usually referred to as a candidate key.
 
+### RoadMap:
+- Conceptual
+- Logical
+- Physical
+- Storage
+
 ### Database Gurus
 http://www.dbdebunk.com/
