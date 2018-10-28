@@ -1,3 +1,6 @@
+*init:sound track*
+<https://www.youtube.com/watch?v=Ds8S7fIbxUg
+
 ### Edgar F Codd :sunglasses:
 *Wrote the paper 'A Relational Model of Data For Large Shared Data Banks'*
 
