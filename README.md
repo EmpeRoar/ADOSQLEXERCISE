@@ -25,5 +25,14 @@
 ### IDEFX-DATA Modeling
 > http://www.idef.com/idef1x-data-modeling-method/
 
+
+### Ask the right Questions
+- What Data Is Needed?
+- How Will the Data Be Used?
+- What Rules Govern the Use of the Data?
+- What Data Is Reported On?
+- Where Is the Data Now?
+
+
 ### Database Gurus
 http://www.dbdebunk.com/
