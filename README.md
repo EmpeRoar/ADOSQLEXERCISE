@@ -26,7 +26,8 @@
 
 
 ### IDEFX-DATA Modeling
-> http://www.idef.com/idef1x-data-modeling-method/
+> http://www.idef.com/idef1x-data-modeling-method/ <br/> 
+> https://www.nist.gov/itl (search for *IDEF1X*)
 
 
 ### Ask the right Questions
