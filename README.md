@@ -56,3 +56,8 @@ http://www.dbdebunk.com/
 - Identifying business rules
 - Identifying fundamental processes
 
+## Entities _(nouns)_
+- People
+- Place
+- Object
+- Idea _( a document, insurance, group, list of services provided)_
