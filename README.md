@@ -60,4 +60,4 @@ http://www.dbdebunk.com/
 - People
 - Place
 - Object
-- Idea _( a document, insurance, group, list of services provided)_
+- Idea _( a document, insurance, group, list of services provided )_
