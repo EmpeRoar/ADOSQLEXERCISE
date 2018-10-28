@@ -33,6 +33,10 @@
 - What Data Is Reported On?
 - Where Is the Data Now?
 - Will the Data Need to Be Integrated with Other Systems?
+- How Much Is his Data Worth?
+- Who Will Use the Data?
+
+
 
 
 ### Database Gurus
