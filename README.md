@@ -32,6 +32,7 @@
 - What Rules Govern the Use of the Data?
 - What Data Is Reported On?
 - Where Is the Data Now?
+- Will the Data Need to Be Integrated with Other Systems?
 
 
 ### Database Gurus
