@@ -48,3 +48,9 @@ http://www.dbdebunk.com/
 
 ## _Search for the BEST data modeling tool_
 
+- Identifying entities
+- Identifying relationships between entities
+- Identifying attributes and domains
+- Identifying business rules
+- Identifying fundamental processes
+
