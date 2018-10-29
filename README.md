@@ -66,4 +66,7 @@ http://www.dbdebunk.com/
 ### Data Modeling
 > https://www.youtube.com/watch?v=A1A_ag-Fh8M <br/>
 > https://www.youtube.com/watch?v=QpdhBUYk7Kk <br/>
-> https://www.youtube.com/watch?v=B5r8CcTUs5Y 
+> https://www.youtube.com/watch?v=B5r8CcTUs5Y <br />
+> https://channel9.msdn.com/events/Build/2016/P468?term=data%20modeling&lang-en=true <br/>
+> https://mva.microsoft.com/en-US/training-courses/8441?l=hzsFp0Vz_7504984382 <br/>
+> https://channel9.msdn.com/events/Microsoft-Data-Insights-Summit/2016/BRE003?term=data%20modeling&lang-en=true
