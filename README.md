@@ -65,4 +65,5 @@ http://www.dbdebunk.com/
 
 ### Data Modeling
 > https://www.youtube.com/watch?v=A1A_ag-Fh8M <br/>
-> https://www.youtube.com/watch?v=QpdhBUYk7Kk
+> https://www.youtube.com/watch?v=QpdhBUYk7Kk <br/>
+> https://www.youtube.com/watch?v=B5r8CcTUs5Y 
