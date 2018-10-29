@@ -62,6 +62,10 @@ http://www.dbdebunk.com/
 - Object
 - Idea _( a document, insurance, group, list of services provided )_
 
+## Normalization
+### 1. First Normal Form
+> Every row should contain the same number of values, or in other words, no arrays, subtables, or repeating groups.
+### 2. 
 
 ### Data Modeling
 > https://www.youtube.com/watch?v=A1A_ag-Fh8M <br/>
