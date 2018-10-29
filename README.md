@@ -61,3 +61,7 @@ http://www.dbdebunk.com/
 - Place
 - Object
 - Idea _( a document, insurance, group, list of services provided )_
+
+
+### Data Modeling
+> https://www.youtube.com/watch?v=A1A_ag-Fh8M
