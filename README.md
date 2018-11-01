@@ -74,3 +74,6 @@ http://www.dbdebunk.com/
 > https://channel9.msdn.com/events/Build/2016/P468?term=data%20modeling&lang-en=true <br/>
 > https://mva.microsoft.com/en-US/training-courses/8441?l=hzsFp0Vz_7504984382 <br/>
 > https://channel9.msdn.com/events/Microsoft-Data-Insights-Summit/2016/BRE003?term=data%20modeling&lang-en=true
+
+### Reserved Keywors
+> https://docs.microsoft.com/en-us/sql/t-sql/language-elements/reserved-keywords-transact-sql?view=sql-server-2017
