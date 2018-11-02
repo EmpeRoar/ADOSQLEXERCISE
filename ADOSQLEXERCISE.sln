@@ -34,6 +34,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DBCreations", "DBCreations"
 		GeneratingCodes.sql = GeneratingCodes.sql
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DocumentingDatabase", "DocumentingDatabase", "{5A5DABD7-50E4-4ED6-9D80-E92996491B1B}"
+	ProjectSection(SolutionItems) = preProject
+		Documenting.sql = Documenting.sql
+		ReadingDocumentProperties.sql = ReadingDocumentProperties.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ViewingBasicMetaData", "ViewingBasicMetaData", "{DD6F7B7B-3651-48E8-852B-6234E9990463}"
+	ProjectSection(SolutionItems) = preProject
+		ChecksContrains.sql = ChecksContrains.sql
+		Constraints.sql = Constraints.sql
+		TableSchemas.sql = TableSchemas.sql
+		Triggers.sql = Triggers.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{B42A1700-82CD-4333-A0C8-3CB9E5F60CDA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +70,9 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6AA8D0F0-76F7-423C-94B9-5442D5C01985} = {6B31BD0C-C38B-48CF-B750-DD99FB65518D}
+		{5A5DABD7-50E4-4ED6-9D80-E92996491B1B} = {6B31BD0C-C38B-48CF-B750-DD99FB65518D}
+		{DD6F7B7B-3651-48E8-852B-6234E9990463} = {6B31BD0C-C38B-48CF-B750-DD99FB65518D}
+		{B42A1700-82CD-4333-A0C8-3CB9E5F60CDA} = {6B31BD0C-C38B-48CF-B750-DD99FB65518D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5D63244C-409B-4085-8DC2-E3BD19F9A6B8}
