@@ -9,8 +9,29 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MODELS", "MODELS\MODELS.csp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DatabaseDesignScripts", "DatabaseDesignScripts", "{6B31BD0C-C38B-48CF-B750-DD99FB65518D}"
 	ProjectSection(SolutionItems) = preProject
+		Constrains.sql = Constrains.sql
 		CreateDatabaseScript.sql = CreateDatabaseScript.sql
+		CreateTable.sql = CreateTable.sql
 		CreatingSchemas.sql = CreatingSchemas.sql
+		CreatingTablesSample.sql = CreatingTablesSample.sql
+		Sequence.sql = Sequence.sql
+		Sequence2.sql = Sequence2.sql
+		ViewConstraints.sql = ViewConstraints.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DBCreations", "DBCreations", "{6AA8D0F0-76F7-423C-94B9-5442D5C01985}"
+	ProjectSection(SolutionItems) = preProject
+		AlterToAddCheckConstrains.sql = AlterToAddCheckConstrains.sql
+		AlterToAddDefaultConstrain.sql = AlterToAddDefaultConstrain.sql
+		AlterToAddForeignKeys.sql = AlterToAddForeignKeys.sql
+		AlterToAddGeneratedConstrains.sql = AlterToAddGeneratedConstrains.sql
+		AlterToAddPrimaryKeys.sql = AlterToAddPrimaryKeys.sql
+		AlterToAddUniqueKeys.sql = AlterToAddUniqueKeys.sql
+		CreateTriggersAfter.sql = CreateTriggersAfter.sql
+		CreateTriggersInsteadOf.sql = CreateTriggersInsteadOf.sql
+		CreatingTables.sql = CreatingTables.sql
+		CreatingTablesConstrains.sql = CreatingTablesConstrains.sql
+		GeneratingCodes.sql = GeneratingCodes.sql
 	EndProjectSection
 EndProject
 Global
@@ -30,6 +51,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6AA8D0F0-76F7-423C-94B9-5442D5C01985} = {6B31BD0C-C38B-48CF-B750-DD99FB65518D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5D63244C-409B-4085-8DC2-E3BD19F9A6B8}

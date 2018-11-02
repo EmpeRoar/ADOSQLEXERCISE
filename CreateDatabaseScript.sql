@@ -47,4 +47,25 @@ ALTER AUTHORIZATION ON Database::ConferenceMessaging TO SA;
 -- Changing owners of the schema changes owners of the table. 
 -- (This is done using the ALTER AUTHORIZATION statement.) 
 
+/*
+MessageId int, 
+SentToMessagingUserId int, 
+MessagingUserId int, 
+Text nvarchar(200), 
+MessageTime datetime2(0), 
+RowCreateTime datetime2(0), 
+RowLastUpdateTime datetime2(0)
+*/
+
+
+declare @time datetime2(0) 
+set @time = SYSDATETIME()
+
+-- dateadd(hour,datepart(hour,@time),cast(cast(@time as date) as datetime2(0)))
+
+-- RowCreateTime as dateadd(hour,datepart(hour,MessageTime), cast(cast(MessageTime as date) as datetime2(0))) PERSISTED
+
+
+
+
 
