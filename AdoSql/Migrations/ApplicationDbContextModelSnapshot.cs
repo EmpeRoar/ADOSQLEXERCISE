@@ -27,13 +27,14 @@ namespace AdoSql.Migrations
 
                     b.Property<DateTime>("Created")
                         .ValueGeneratedOnAdd()
-                        .HasDefaultValue(new DateTime(2018, 11, 2, 6, 34, 40, 841, DateTimeKind.Utc).AddTicks(1766));
+                        .HasDefaultValue(new DateTime(2018, 11, 2, 6, 54, 32, 207, DateTimeKind.Utc).AddTicks(4186));
 
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasMaxLength(30);
 
-                    b.Property<string>("GovId");
+                    b.Property<string>("GovId")
+                        .IsRequired();
 
                     b.Property<string>("LastName")
                         .IsRequired()
@@ -41,10 +42,11 @@ namespace AdoSql.Migrations
 
                     b.HasKey("PersonId");
 
+                    b.HasAlternateKey("GovId");
+
                     b.HasIndex("GovId")
                         .IsUnique()
-                        .HasName("UX_Person_GovId")
-                        .HasFilter("[GovId] IS NOT NULL");
+                        .HasName("UX_Person_GovId");
 
                     b.HasIndex("PersonId")
                         .IsUnique()

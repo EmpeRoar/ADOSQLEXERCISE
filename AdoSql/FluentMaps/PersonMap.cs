@@ -12,8 +12,9 @@ namespace DATA.FluentMaps
         {
             var entity = modelBuilder.Entity<Person>();
 
-            // Primary Key
-            entity.HasKey(x => x.PersonId);
+            // Keys
+            entity.HasKey(x => x.PersonId); // Surrogate Key
+            entity.HasAlternateKey(t => t.GovId); // Alternate Key
 
             // Properties
             entity.Property(t => t.FirstName)
@@ -23,9 +24,7 @@ namespace DATA.FluentMaps
             entity.Property(t => t.LastName)
                 .HasMaxLength(30)
                 .IsRequired();
-
-            entity.Property(t => t.GovId);
-
+            
             entity.Property(t => t.Created)
                 .HasDefaultValue(DateTime.UtcNow);
 
