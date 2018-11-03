@@ -77,3 +77,6 @@ http://www.dbdebunk.com/
 
 ### Reserved Keywors
 > https://docs.microsoft.com/en-us/sql/t-sql/language-elements/reserved-keywords-transact-sql?view=sql-server-2017
+
+### Performance
+> https://sqlserverperformance.wordpress.com/
