@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AdoSql\AdoSql.csproj" />
+    <ProjectReference Include="..\DATA\DATA.csproj" />
+    <ProjectReference Include="..\MODELS\MODELS.csproj" />
+  </ItemGroup>
+
+</Project>
