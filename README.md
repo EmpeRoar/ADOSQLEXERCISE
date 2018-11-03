@@ -92,7 +92,7 @@ http://www.dbdebunk.com/
 
 > <DotNetCliToolReference Include="Microsoft.Extensions.Caching.SqlConfig.Tools" Version="2.0.0" /> 
 
-```
+```csharp
  services.AddDistributedSqlServerCache(options => {                
     options.ConnectionString = conString;                
     options.SchemaName = "dbo";                
