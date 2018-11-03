@@ -83,3 +83,6 @@ http://www.dbdebunk.com/
 
 ### Indexes
 > https://docs.microsoft.com/en-us/ef/core/modeling/indexes
+
+### Unique Constraint
+> https://www.thereformedprogrammer.net/entity-framework-core-validating-data-and-catching-sql-errors/
