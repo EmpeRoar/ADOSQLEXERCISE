@@ -56,6 +56,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DBCreation2", "DBCreation2"
 		SeedDb.sql = SeedDb.sql
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DBCreation3", "DBCreation3", "{B418A8E6-1548-4237-801F-226410D8B32B}"
+	ProjectSection(SolutionItems) = preProject
+		CreateLegoDb.sql = CreateLegoDb.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -76,6 +81,7 @@ Global
 		{DD6F7B7B-3651-48E8-852B-6234E9990463} = {6B31BD0C-C38B-48CF-B750-DD99FB65518D}
 		{B42A1700-82CD-4333-A0C8-3CB9E5F60CDA} = {6B31BD0C-C38B-48CF-B750-DD99FB65518D}
 		{B97F34DB-E2ED-42F2-B7DC-7B18D23E1FFE} = {6B31BD0C-C38B-48CF-B750-DD99FB65518D}
+		{B418A8E6-1548-4237-801F-226410D8B32B} = {6B31BD0C-C38B-48CF-B750-DD99FB65518D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5D63244C-409B-4085-8DC2-E3BD19F9A6B8}
