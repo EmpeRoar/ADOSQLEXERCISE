@@ -86,3 +86,6 @@ http://www.dbdebunk.com/
 
 ### Unique Constraint
 > https://www.thereformedprogrammer.net/entity-framework-core-validating-data-and-catching-sql-errors/
+
+### More Resources
+> https://github.com/apress/pro-ef-core-2-for-asp.net-core-mvc
