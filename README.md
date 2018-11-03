@@ -89,3 +89,18 @@ http://www.dbdebunk.com/
 
 ### More Resources
 > https://github.com/apress/pro-ef-core-2-for-asp.net-core-mvc
+
+> <DotNetCliToolReference Include="Microsoft.Extensions.Caching.SqlConfig.Tools" Version="2.0.0" /> 
+
+```
+ services.AddDistributedSqlServerCache(options => {                
+    options.ConnectionString = conString;                
+    options.SchemaName = "dbo";                
+    options.TableName = "SessionData";            
+});            
+services.AddSession(options => {                
+    options.Cookie.Name = "ProjectName.Session";                
+    options.IdleTimeout = System.TimeSpan.FromHours(48);                
+    options.Cookie.HttpOnly = false;            
+}); 
+```
