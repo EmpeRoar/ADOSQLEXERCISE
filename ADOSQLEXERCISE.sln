@@ -61,6 +61,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DBCreation3", "DBCreation3"
 		CreateLegoDb.sql = CreateLegoDb.sql
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Indexing", "Indexing", "{2F926CD3-274B-482D-8A01-758107387881}"
+	ProjectSection(SolutionItems) = preProject
+		Indexing.sql = Indexing.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
