@@ -80,3 +80,6 @@ http://www.dbdebunk.com/
 
 ### Performance
 > https://sqlserverperformance.wordpress.com/
+
+### Indexes
+> https://docs.microsoft.com/en-us/ef/core/modeling/indexes
