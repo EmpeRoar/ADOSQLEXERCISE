@@ -4,14 +4,16 @@ using AdoSql;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AdoSql.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20181102233804_Address")]
+    partial class Address
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -27,11 +29,9 @@ namespace AdoSql.Migrations
 
                     b.Property<string>("Address");
 
-                    b.Property<string>("BloodType");
-
                     b.Property<DateTime>("Created")
                         .ValueGeneratedOnAdd()
-                        .HasDefaultValue(new DateTime(2018, 11, 3, 0, 15, 39, 928, DateTimeKind.Utc).AddTicks(850));
+                        .HasDefaultValue(new DateTime(2018, 11, 2, 23, 38, 3, 691, DateTimeKind.Utc).AddTicks(2703));
 
                     b.Property<string>("FirstName")
                         .IsRequired()

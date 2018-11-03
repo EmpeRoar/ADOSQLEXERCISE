@@ -1,8 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
-using MODELS;
+﻿using AdoSql.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DATA.FluentMaps
 {
@@ -24,7 +22,9 @@ namespace DATA.FluentMaps
             entity.Property(t => t.LastName)
                 .HasMaxLength(30)
                 .IsRequired();
-            
+
+            entity.Property(t => t.Address);
+
             entity.Property(t => t.Created)
                 .HasDefaultValue(DateTime.UtcNow);
 

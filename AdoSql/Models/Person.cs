@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace MODELS
+namespace AdoSql.Models
 {
     public class Person
     {
@@ -12,6 +14,8 @@ namespace MODELS
         public string LastName { get; set; }
 
         public string Address { get; set; }
+
+        public string BloodType { get; set; }
 
         public DateTime Created { get; set; }
     }

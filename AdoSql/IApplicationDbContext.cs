@@ -1,5 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using MODELS;
+﻿using AdoSql.Models;
+using Microsoft.EntityFrameworkCore;
 using System.Threading;
 using System.Threading.Tasks;
 

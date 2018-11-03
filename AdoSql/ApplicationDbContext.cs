@@ -1,6 +1,6 @@
-﻿using DATA.FluentMaps;
+﻿using AdoSql.Models;
+using DATA.FluentMaps;
 using Microsoft.EntityFrameworkCore;
-using MODELS;
 using System.Threading;
 using System.Threading.Tasks;
 
