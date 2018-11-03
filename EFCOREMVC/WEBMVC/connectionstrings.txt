@@ -1,0 +1,2 @@
+﻿Server=(localdb)\\MSSQLLocalDB;Database=PartyInvites
+Server=DESKTOP-TDHPB1J\\SQLEXPRESS02;Database=ADOSQLEXERCISECONSOLE2;Trusted_Connection=True;MultipleActiveResultSets=true
