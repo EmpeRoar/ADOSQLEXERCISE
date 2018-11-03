@@ -89,3 +89,5 @@ http://www.dbdebunk.com/
 
 ### More Resources
 > https://github.com/apress/pro-ef-core-2-for-asp.net-core-mvc
+
+> <DotNetCliToolReference Include="Microsoft.Extensions.Caching.SqlConfig.Tools" Version="2.0.0" /> 
