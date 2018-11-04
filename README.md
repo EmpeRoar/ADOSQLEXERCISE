@@ -105,7 +105,7 @@ services.AddSession(options => {
 }); 
 ```
 
-### EF Core RelationShip
+### EF Core RelationShip / Model Building
 ```csharp
  modelBuilder.Entity<Employee>()                
      .Property(e => e.Id).ForSqlServerUseSequenceHiLo();
@@ -121,4 +121,19 @@ modelBuilder.Entity<Employee>()
      .WithOne(e => e.OtherIdentity)                
      .HasPrincipalKey<Employee>(e => e.SSN)                
      .HasForeignKey<SecondaryIdentity>(s => s.PrimarySSN); 
+
+// ------------------------------------------------------------------
+
+protected override void OnModelCreating(ModelBuilder modelBuilder) {
+
+	modelBuilder.Entity<Employee>().Ignore(e => e.Id);            
+	modelBuilder.Entity<Employee>().HasKey(e => e.SSN);
+	
+	modelBuilder.Entity<SecondaryIdentity>()                
+				.HasOne(s => s.PrimaryIdentity)                
+				.WithOne(e => e.OtherIdentity)                
+				.HasPrincipalKey<Employee>(e => e.SSN)                
+				.HasForeignKey<SecondaryIdentity>(s => s.PrimarySSN);
+				
+}      
 ```
