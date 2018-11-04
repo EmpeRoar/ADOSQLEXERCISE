@@ -137,3 +137,20 @@ protected override void OnModelCreating(ModelBuilder modelBuilder) {
 				
 }      
 ```
+### Query EF
+```csharp
+ public class HomeController : Controller {        
+ 	private AdvancedContext context;
+        private static Func<AdvancedContext, string, IEnumerable<Employee>> query = 
+		EF.CompileQuery((AdvancedContext context, string searchTerm) => 
+		context.Employees.Where(e => EF.Functions.Like(e.FirstName, searchTerm)));
+		
+        public HomeController(AdvancedContext ctx) => context = ctx;
+        
+	public IActionResult Index(string searchTerm) {            
+		return View(string.IsNullOrEmpty(searchTerm ) ? 
+				context.Employees : 
+				query(context, searchTerm));        
+	}
+        // ...other action methods omitted for brevity...    } 
+```
