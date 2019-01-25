@@ -92,7 +92,7 @@ http://www.dbdebunk.com/
 
 > <DotNetCliToolReference Include="Microsoft.Extensions.Caching.SqlConfig.Tools" Version="2.0.0" /> 
 
-```
+```csharp
  services.AddDistributedSqlServerCache(options => {                
     options.ConnectionString = conString;                
     options.SchemaName = "dbo";                
@@ -103,4 +103,54 @@ services.AddSession(options => {
     options.IdleTimeout = System.TimeSpan.FromHours(48);                
     options.Cookie.HttpOnly = false;            
 }); 
+```
+
+### EF Core RelationShip / Model Building
+```csharp
+ modelBuilder.Entity<Employee>()                
+     .Property(e => e.Id).ForSqlServerUseSequenceHiLo();
+
+//modelBuilder.Entity<Employee>()            
+//   .HasIndex(e => e.SSN).HasName("SSNIndex").IsUnique();
+
+modelBuilder.Entity<Employee>()
+     .HasAlternateKey(e => e.SSN);
+
+ modelBuilder.Entity<SecondaryIdentity>()                
+     .HasOne(s => s.PrimaryIdentity)                
+     .WithOne(e => e.OtherIdentity)                
+     .HasPrincipalKey<Employee>(e => e.SSN)                
+     .HasForeignKey<SecondaryIdentity>(s => s.PrimarySSN); 
+
+// ------------------------------------------------------------------
+
+protected override void OnModelCreating(ModelBuilder modelBuilder) {
+
+	modelBuilder.Entity<Employee>().Ignore(e => e.Id);            
+	modelBuilder.Entity<Employee>().HasKey(e => e.SSN);
+	
+	modelBuilder.Entity<SecondaryIdentity>()                
+				.HasOne(s => s.PrimaryIdentity)                
+				.WithOne(e => e.OtherIdentity)                
+				.HasPrincipalKey<Employee>(e => e.SSN)                
+				.HasForeignKey<SecondaryIdentity>(s => s.PrimarySSN);
+				
+}      
+```
+### Query EF
+```csharp
+ public class HomeController : Controller {        
+ 	private AdvancedContext context;
+        private static Func<AdvancedContext, string, IEnumerable<Employee>> query = 
+		EF.CompileQuery((AdvancedContext context, string searchTerm) => 
+		context.Employees.Where(e => EF.Functions.Like(e.FirstName, searchTerm)));
+		
+        public HomeController(AdvancedContext ctx) => context = ctx;
+        
+	public IActionResult Index(string searchTerm) {            
+		return View(string.IsNullOrEmpty(searchTerm ) ? 
+				context.Employees : 
+				query(context, searchTerm));        
+	}
+        // ...other action methods omitted for brevity...    } 
 ```
