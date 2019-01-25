@@ -12,5 +12,7 @@ namespace WEBMVC.Models
         public string Email { get; set; }
         public string Phone { get; set; }
         public bool? WillAttend { get; set; }
+
+        public bool SoftDeleted { get; set; } = false;
     }
 }

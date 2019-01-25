@@ -10,9 +10,15 @@ namespace WEBMVC.Models
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
-
+            //ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
         }
 
         public DbSet<GuestResponse> Responses { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<GuestResponse>()
+                        .HasQueryFilter(e => !e.SoftDeleted);
+        }
     }
 }
