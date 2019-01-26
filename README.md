@@ -154,3 +154,7 @@ protected override void OnModelCreating(ModelBuilder modelBuilder) {
 	}
         // ...other action methods omitted for brevity...    } 
 ```
+
+
+### TSQL Playbook
+https://gist.github.com/EmpeRoar/6fc54eaa8b1be3f84926
