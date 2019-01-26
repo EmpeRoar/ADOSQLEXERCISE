@@ -87,7 +87,7 @@ CREATE TABLE Organization.Company (
 	Id                          int           NOT NULL 
        CONSTRAINT PK_Organization_Company PRIMARY KEY CLUSTERED
        IDENTITY ( 1,1 ),
-	OrganizationName            varchar(16)       NOT NULL,
+	OrganizationName            nvarchar(64)       NOT NULL,
 	RegisteredName              nvarchar(64)      NULL,
     IsDeleted                   bit               NOT NULL,
     Updated                     DATETIME2         NULL,
@@ -101,7 +101,7 @@ CREATE TABLE Organization.BusinessUnit (
 	Id                          int           NOT NULL 
        CONSTRAINT PK_Organization_BusinessUnit PRIMARY KEY CLUSTERED
        IDENTITY ( 1,1 ),
-	OrganizationName            varchar(16)       NOT NULL,
+	OrganizationName            nvarchar(64)       NOT NULL,
 	RegisteredName              nvarchar(64)      NULL,
     CompanyId                   int               NOT NULL,
     IsDeleted                   bit               NOT NULL,
@@ -115,7 +115,7 @@ CREATE TABLE Organization.PayrollServiceProvider (
 	Id                          int           NOT NULL 
        CONSTRAINT PK_Organization_PayrollServiceProvider PRIMARY KEY CLUSTERED
        IDENTITY ( 1,1 ),
-	OrganizationName            varchar(16)       NOT NULL,
+	OrganizationName            nvarchar(64)       NOT NULL,
 	RegisteredName              nvarchar(64)      NULL,
     IsDeleted                   bit               NOT NULL,
     Updated                     DATETIME2         NULL,
@@ -174,12 +174,12 @@ values ('Facebook','Facebook Inc.',0, getdate()),
        ('Google','Alphabet Inc.',0, getdate());
 GO
 
-insert into Organization.BusinessUnit(OrganizationName, RegisteredName, IsDeleted, Created)
-values ('Facebook Australia','Facebook Australia Inc.',0, getdate()),
-       ('Google Austrlia','Alphabet Australia Inc.',0, getdate());
+insert into Organization.BusinessUnit(OrganizationName, RegisteredName, CompanyId, IsDeleted, Created)
+values ('Facebook Australia','Facebook Australia Inc.',1, 0, getdate()),
+       ('Google Austrlia','Alphabet Australia Inc.', 2, 0, getdate());
 GO
 
-insert into OrganizationJunction.OrganizationAddress(CompanyId, AddressId)
+insert into OrganizationJunction.OrganizationAddress(OrganizationId, AddressId)
 values (1,1),
        (1,2),
        (2,3),

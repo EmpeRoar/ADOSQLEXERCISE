@@ -5,8 +5,8 @@ SELECT C.OrganizationName,
 	   GC.Value, 
 	   GLA.Value as AddressType
 FROM [Organization].[Company] AS C
-  INNER JOIN [Organization].[CompanyAddress] AS CA
-     ON C.Id = CA.CompanyId
+  INNER JOIN [OrganizationJunction].[OrganizationAddress] AS CA
+     ON C.Id = CA.OrganizationId
   INNER JOIN [General].[Address] AS GA
      ON GA.Id = CA.AddressId
   INNER JOIN [GeneralLookup].[Country] AS GC
