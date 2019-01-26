@@ -1,0 +1,17 @@
+1. data types.
+2. data type conversions
+3. handling NULLS using the ISNULL and COALESCE function
+
+
+Handling Nulls.
+a. ISNULL
+b. COALESCE
+
+
+
+1. Evaluate results of data type conversions.
+2. determine proper data types for the given data elements or table columns
+3. Identity locations of implicit data type conversions in queries
+4. determine the correct results of joins and functions in the presence of NULL values.
+5. identity proper usage of ISNULL and COALESCE functions.
+
