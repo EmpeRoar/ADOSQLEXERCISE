@@ -13,3 +13,7 @@ FROM [Organization].[Company] AS C
      ON GC.Id = GA.CountryId
   INNER JOIN [GeneralLookup].[AddressType] AS GLA
      ON GLA.Id = GA.AddressTypeId
+
+
+
+------------------------------------------------------------------------------     
